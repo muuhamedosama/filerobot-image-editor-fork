@@ -42,6 +42,7 @@ export const TOOLS_IDS = {
   WATERMARK: 'Watermark',
   PEN: 'Pen',
   RESIZE: 'Resize',
+  ERASER: 'Eraser',
 };
 
 export const FLIP_DIRECTIONS = {

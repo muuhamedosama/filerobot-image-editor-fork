@@ -28,6 +28,7 @@ const accordions = document.querySelectorAll('[data-accordion]');
 
 let useCloudimage = false;
 const { TABS } = FilerobotImageEditor;
+const { TOOLS } = FilerobotImageEditor;
 
 const EXAMPLE_CODE_TABS = {
   'js-code-tab': jsCodeWrapper,
@@ -59,12 +60,13 @@ const IMG_EDITOR_TABS = {
   resize: TABS.RESIZE,
 };
 
+
 const pluginConfig = {
   ...config,
   source: 'https://scaleflex.cloudimg.io/v7/demo/river.png',
   tabsIds: selectedTabs,
-  defaultTabId: TABS.RESIZE,
-  defaultToolId: null,
+  defaultTabId: TABS.ANNOTATE,
+  defaultToolId: TOOLS.PEN,
   observePluginContainerSize: true,
   cloudimage: {
     token: 'demo',

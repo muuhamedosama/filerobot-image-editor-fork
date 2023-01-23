@@ -17,6 +17,7 @@ import { PenButton, PenOptions } from './Pen';
 import { LineButton, LineOptions } from './Line';
 import { ArrowButton, ArrowOptions } from './Arrow';
 import { PolygonButton, PolygonOptions } from './Polygon';
+import { EraserButton, EraserOptions } from './Eraser';
 import { Resize } from './Resize';
 import { Watermark } from './Watermark';
 
@@ -112,6 +113,11 @@ export const TOOLS_ITEMS = {
     id: TOOLS_IDS.ARROW,
     Item: ArrowButton,
     ItemOptions: ArrowOptions,
+  }, 
+  [TOOLS_IDS.ERASER]: {
+    id: TOOLS_IDS.ERASER,
+    Item: EraserButton,
+    ItemOptions: EraserOptions,
   },
   [TOOLS_IDS.RESIZE]: {
     id: TOOLS_IDS.RESIZE,
@@ -144,6 +150,7 @@ export const TABS_TOOLS = {
     TOOLS_IDS.PEN,
     TOOLS_IDS.LINE,
     TOOLS_IDS.ARROW,
+    TOOLS_IDS.ERASER,
   ],
   [TABS_IDS.RESIZE]: [TOOLS_IDS.RESIZE],
 };
